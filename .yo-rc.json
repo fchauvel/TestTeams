@@ -1,0 +1,9 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "axbit"
+    },
+    "libraryName": "teamsTest",
+    "generator-version": "3.5.0"
+  }
+}
