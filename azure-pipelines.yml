@@ -17,5 +17,6 @@ steps:
 
 - script: |
     npm install
+    gulp build
     npm run ci:test
   displayName: 'npm install and run gulp'
