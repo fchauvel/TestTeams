@@ -11,17 +11,17 @@
 // please read our getting started guide:
 // https://on.cypress.io/introduction-to-cypress
 
-describe('example to-do app', () => {
-  beforeEach(() => {
-    cy.visit('axbitTab/')
-  })
-
-  it('includes a working button', () => {
-
-    cy.on('window:alert', (str) => {
-      expect(str).to.equal("It worked!")
+describe("example to-do app", () => {
+    beforeEach(() => {
+        cy.visit("axbitTab/");
     });
 
-    cy.get("button").contains("sample").click();
-  })
-})
+    it("includes a working button", () => {
+
+        cy.on("window:alert", (str) => {
+            expect(str).to.equal("It worked!");
+        });
+
+        cy.get("button").contains("sample").click();
+    });
+});

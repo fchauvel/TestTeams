@@ -18,5 +18,6 @@ steps:
 - script: |
     npm install
     gulp build
+    npm run lint
     npm run ci:test
-  displayName: 'npm install and run gulp'
+  displayName: 'Build, check code quality, and test'
