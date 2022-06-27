@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.9",
+  "id": "e4150f90-f2e9-11ec-9bf9-dd798523c43b",
+  "version": "0.0.1",
+  "packageName": "teamstest",
+  "developer": {
+    "name": "axbit",
+    "websiteUrl": "https://teamstest.azurewebsites.net",
+    "privacyUrl": "https://teamstest.azurewebsites.net/privacy.html",
+    "termsOfUseUrl": "https://teamstest.azurewebsites.net/tou.html"
+  },
+  "name": {
+    "short": "teams test",
+    "full": "teams test"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://teamstest.azurewebsites.net/axbitTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ],
+      "sharePointPreviewImage": "https://teamstest.azurewebsites.net/assets/axbitTab-preview.png",
+      "supportedSharePointHosts": [
+        "sharePointFullPage",
+        "sharePointWebPart"
+      ]
+    }
+  ],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "teamstest.azurewebsites.net"
+  ],
+  "showLoadingIndicator": false
+}

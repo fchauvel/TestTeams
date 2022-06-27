@@ -7,7 +7,9 @@
     "build": "gulp build",
     "manifest": "gulp manifest",
     "debug": "gulp serve --debug",
-    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
+    "cy:run": "cypress run --project src/client",
+    "ci:test": "npm start & wait-on http://localhost:3007/ & npm run cy:run"
   },
   "dependencies": {
     "@fluentui/react-northstar": "~0.58.0",

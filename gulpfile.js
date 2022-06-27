@@ -26,3 +26,9 @@ const core = require("yoteams-build-core");
 core.setup(gulp, config);
 
 // Add your custom or override tasks below
+
+gulp.task("bidon", function franckTask (callback) {
+    console.log("This was a nice custom task!");
+    callback();
+});
+

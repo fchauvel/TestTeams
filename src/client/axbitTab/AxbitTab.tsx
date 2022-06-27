@@ -37,11 +37,11 @@ export const AxbitTab = () => {
                 <Flex.Item>
                     <Header content="This is your tab" />
                 </Flex.Item>
-                <Flex.Item>cypress
+                <Flex.Item>
                     <div>
                         <div>
                             <Text content={entityId} />
-                            <p>Franck's Contribution</p>
+                            <p>Franck Contribution</p>
                         </div>
 
                         <div>

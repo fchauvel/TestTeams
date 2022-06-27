@@ -13,7 +13,7 @@
 
 describe('example to-do app', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3007/axbitTab/')
+    cy.visit('axbitTab/')
   })
 
   it('includes a working button', () => {
