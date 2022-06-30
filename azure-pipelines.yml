@@ -9,6 +9,9 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+variables:
+  PACKAGE_NAME: teamstest
+  
 steps:
 - task: NodeTool@0
   inputs:
