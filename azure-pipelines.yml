@@ -23,11 +23,10 @@ steps:
   displayName: 'Build, check code quality, and test'
 
 - script: |
-    gulp build
     gulp manifest
     bash ./publish.sh
   displayName: 'Deploy on the test tenant'
   env:
     CI_USERNAME: $(CI_USERNAME)
     CI_PASSWORD: $(CI_PASSWORD)
-    
+    APPLICATION_ID: $(APPLICATION_ID)
