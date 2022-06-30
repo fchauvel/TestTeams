@@ -26,7 +26,7 @@ steps:
     gulp build
     gulp manifest
     bash ./publish.sh
-  displayName: ''
+  displayName: 'Deploy on the test tenant'
   env:
     CI_USERNAME: $(CI_USERNAME)
     CI_PASSWORD: $(CI_PASSWORD)
