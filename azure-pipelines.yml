@@ -21,3 +21,12 @@ steps:
     npm run lint
     npm run ci:test
   displayName: 'Build, check code quality, and test'
+
+- script: |
+    gulp manifest
+    bash publish.sh
+  displayName: 'Deploy into test tenant'
+  env:
+    CI_USERNAME: $(CI_USERNAME)
+    CI_PASSWORD: $(CI_PASSWORD)
+    

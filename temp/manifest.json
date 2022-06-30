@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
   "manifestVersion": "1.9",
   "id": "e4150f90-f2e9-11ec-9bf9-dd798523c43b",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "packageName": "teamstest",
   "developer": {
     "name": "axbit",
