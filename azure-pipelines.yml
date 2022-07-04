@@ -11,6 +11,7 @@ pool:
 
 variables:
   PACKAGE_NAME: teamstest
+  PUBLIC_HOSTNAME: teamstest.azurewebsites.net
   
 steps:
 - task: NodeTool@0
