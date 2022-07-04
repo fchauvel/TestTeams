@@ -19,17 +19,18 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install
+    npm ci
+  displayName: "Install required dependencies"
+
+- script: |
+    set -x 
     gulp build
     npm run lint
     npm run ci:test
-  displayName: 'Build, check code quality, and test'
-
-- script: |
     gulp manifest
-    bash ./publish.sh
-  displayName: 'Deploy on the test tenant'
-  env:
-    CI_USERNAME: $(CI_USERNAME)
-    CI_PASSWORD: $(CI_PASSWORD)
-    APPLICATION_ID: $(APPLICATION_ID)
+  displayName: 'Build, check code quality, test, and package'
+
+- publish: $(System.DefaultWorkingDirectory)/package
+  artifact: $(PACKAGE_NAME).zip
+
+
