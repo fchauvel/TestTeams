@@ -30,7 +30,9 @@ steps:
     npm run ci:test
     gulp manifest
   displayName: 'Build, check code quality, test, and package'
-
+  env:
+    APPLICATION_ID: $(APPLICATION_ID)
+    
 - publish: $(System.DefaultWorkingDirectory)/package
   artifact: $(PACKAGE_NAME).zip
 
